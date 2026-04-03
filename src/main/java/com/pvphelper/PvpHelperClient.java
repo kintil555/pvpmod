@@ -12,7 +12,7 @@ public class PvpHelperClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        LOGGER.info("[PvP Helper] Mod dimuat! Versi 1.0.0 untuk Minecraft 1.21.1");
+        LOGGER.info("[PvP Helper] Mod dimuat! Versi 1.0.1 untuk Minecraft 1.21.11");
         ModConfig.load();
         LOGGER.info("[PvP Helper] Config berhasil dimuat.");
     }
