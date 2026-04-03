@@ -21,11 +21,11 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Re-generate Gradle Wrapper (fix jar)
+      - name: Re-generate Gradle Wrapper dari Gradle 9.4.0 resmi
         run: |
-          wget -q https://services.gradle.org/distributions/gradle-8.11.1-bin.zip -O /tmp/gradle.zip
+          wget -q https://services.gradle.org/distributions/gradle-9.4.0-bin.zip -O /tmp/gradle.zip
           unzip -q /tmp/gradle.zip -d /tmp/
-          /tmp/gradle-8.11.1/bin/gradle wrapper --gradle-version 8.11.1 --distribution-type bin
+          /tmp/gradle-9.4.0/bin/gradle wrapper --gradle-version 9.4.0 --distribution-type bin
           chmod +x gradlew
 
       - name: Cache Gradle
