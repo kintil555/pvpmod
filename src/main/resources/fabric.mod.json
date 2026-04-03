@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "pvphelper",
+  "version": "${version}",
+  "name": "PvP Helper",
+  "description": "Mod PvP dengan health indicator, smart crosshair, dan pengaturan lengkap.",
+  "authors": ["YourName"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.pvphelper.PvpHelperClient"
+    ]
+  },
+  "mixins": [
+    "pvphelper.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": ">=1.21.11"
+  }
+}
